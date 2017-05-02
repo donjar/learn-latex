@@ -20,7 +20,7 @@ class QuestionUserInput extends React.Component {
 
   handleKeyPress(e) {
     if (e.key !== "Enter") { return; }
-    this.props.renderUserAnswer(this.state.input);
+    this.props.updateUserAnswer(this.state.input);
   }
 
   handleInputChange(e) {

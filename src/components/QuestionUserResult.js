@@ -1,21 +1,13 @@
 import React from 'react';
-import { InlineMath, BlockMath } from 'react-katex';
+import LatexMath from './LatexMath';
 
 class QuestionUserResult extends React.Component {
   render() {
-    if (this.props.display === "inline") {
-      return (
-        <div className="QuestionUserResult">
-          <InlineMath math={this.props.text} />
-        </div>
-      );
-    } else if (this.props.display === "block") {
-      return (
-        <div className="QuestionUserResult">
-          <BlockMath math={this.props.text} />
-        </div>
-      )
-    }
+    return (
+      <div className="QuestionUserResult">
+        <LatexMath display={this.props.display} math={this.props.text} />
+      </div>
+    );
   }
 }
 

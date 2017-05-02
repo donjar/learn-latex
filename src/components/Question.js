@@ -18,7 +18,7 @@ class Question extends React.Component {
       <div className="Question">
         <QuestionDescription description={this.props.description} />
         {this.renderAnswer()}
-        <QuestionUserInput renderUserAnswer={(text) => this.renderUserAnswer(text)}/>
+        <QuestionUserInput updateUserAnswer={(text) => this.updateUserAnswer(text)}/>
         {this.renderUserResult()}
       </div>
     );
@@ -39,7 +39,7 @@ class Question extends React.Component {
     return <QuestionUserResult text={latexResult.text} display={latexResult.display} />
   }
 
-  renderUserAnswer(text) {
+  updateUserAnswer(text) {
     this.setState({
       currentUserResult: text,
     });
