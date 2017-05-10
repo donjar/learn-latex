@@ -1,0 +1,45 @@
+exports[`test renders correctly 1`] = `
+<div
+  className="App">
+  <div
+    className="container">
+    <h1>
+      Belajar LaTeX
+    </h1>
+    <div
+      className="Question">
+      <div
+        className="QuestionDescription">
+        Di forum olimpiade.org, kode LaTeX dibungkus dengan tanda dollar ($). Ayok tulis kode LaTeX pertama Anda! Coba tulis $2 + 3 = 5$.
+      </div>
+      <div
+        className="QuestionExpectedResult">
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow><mn>2</mn><mo>+</mo><mn>3</mn><mo>=</mo><mn>5</mn></mrow><annotation encoding=\"application/x-tex\">2 + 3 = 5</annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"strut\" style=\"height:0.64444em;\"></span><span class=\"strut bottom\" style=\"height:0.72777em;vertical-align:-0.08333em;\"></span><span class=\"base textstyle uncramped\"><span class=\"mord mathrm\">2</span><span class=\"mbin\">+</span><span class=\"mord mathrm\">3</span><span class=\"mrel\">=</span><span class=\"mord mathrm\">5</span></span></span></span>",
+            }
+          } />
+      </div>
+      <div
+        className="QuestionUserInput">
+        <input
+          className="form-control"
+          id={undefined}
+          onChange={[Function]}
+          onKeyPress={[Function]}
+          type={undefined} />
+      </div>
+      <div
+        className="QuestionUserResult">
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<span class=\"katex\"><span class=\"katex-mathml\"><math><semantics><mrow></mrow><annotation encoding=\"application/x-tex\"> </annotation></semantics></math></span><span class=\"katex-html\" aria-hidden=\"true\"><span class=\"strut\" style=\"height:0em;\"></span><span class=\"strut bottom\" style=\"height:0em;vertical-align:0em;\"></span><span class=\"base textstyle uncramped\"></span></span></span>",
+            }
+          } />
+      </div>
+    </div>
+  </div>
+</div>
+`;
